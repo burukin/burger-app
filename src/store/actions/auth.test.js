@@ -57,6 +57,20 @@ describe("Auth actions", () => {
     expect(newState).toEqual(expectedState);
   });
 
+  test("should update store correctly afte setAuthRedirectPath action", () => {
+    const expectedState = {
+      token: null,
+      userId: null,
+      error: null,
+      loading: false,
+      authRedirectPath: "/path"
+    };
+
+    testStore.dispatch(authActions.setAuthRedirectPath("/path"));
+    const newState = testStore.getState();
+    expect(newState).toEqual(expectedState);
+  });
+
   test("should update store correctly afte logout action", () => {
     const expectedState = {
       token: null,

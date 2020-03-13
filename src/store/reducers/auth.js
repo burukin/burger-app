@@ -1,6 +1,4 @@
-/**
- * Created by Galina on 5/12/2019.
- */
+
 import * as actionTypes from '../actions/actionTypes';
 import {updateObject} from '../utility';
 

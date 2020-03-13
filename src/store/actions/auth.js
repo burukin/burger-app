@@ -1,6 +1,3 @@
-/**
- * Created by Galina on 5/10/2019.
- */
 import * as actiontypes from './actionTypes';
 import axios from 'axios';
 
@@ -58,6 +55,7 @@ export const auth = (email, password, isSignup) => {
             returnSecureToken: true
         };
         let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyByYvS0Sy1sI8XAecBueK_CNIzAHqn70JM';
+        
         if (!isSignup) {
             url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyByYvS0Sy1sI8XAecBueK_CNIzAHqn70JM'
         }

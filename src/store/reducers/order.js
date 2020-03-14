@@ -1,6 +1,3 @@
-/**
- * Created by Galina on 4/25/2019.
- */
 import * as actionTypes from '../actions/actionTypes';
 import {updateObject} from '../utility';
 

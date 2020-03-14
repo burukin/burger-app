@@ -4,7 +4,7 @@ import axios from "axios";
 import * as actions from "../actions/index";
 import * as actionTypes from "../actions/actionTypes";
 
-function* initIngredientsSaga(action) {
+export function* initIngredientsSaga(action) {
   try {
     const res = yield axios.get(
       "https://react-my-burger-8a92c.firebaseio.com/ingredients.json"
